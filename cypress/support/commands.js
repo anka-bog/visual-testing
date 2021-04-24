@@ -1,10 +1,10 @@
-import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/plugin'
+import { addMatchImageSnapshotCommand } from "cypress-image-snapshot/command"
 
 addMatchImageSnapshotCommand({
   failureTreshold: 0.0, //pixel perfect, no tolerance for ecen one pixel
   failurTresholdType: 'percent',
   customDiffConfig: { treshold: 0.0 },
-  capture: 'viewport',
+  capture: 'viewport'
 })
 
 Cypress.Commands.add('setResolution', (size) => {
