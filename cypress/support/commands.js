@@ -1,4 +1,4 @@
-import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot'
+import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/plugin'
 
 addMatchImageSnapshotCommand({
   failureTreshold: 0.0, //pixel perfect, no tolerance for ecen one pixel
